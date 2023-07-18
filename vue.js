@@ -1,4 +1,5 @@
 function checkbox50Function() {
+var checkbox = document.getElementById("checkbox50");
 h5gg.require(7.9); //设定最低需求的H5GG版本号//min version support for H5GG
 var h5frida=h5gg.loadPlugin("h5frida", "h5frida-15.1.24.dylib");
 if(!h5frida) throw "加载h5frida插件失败\n\nFailed to load h5frida plugin";
