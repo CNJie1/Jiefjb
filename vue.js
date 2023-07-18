@@ -53,7 +53,7 @@ function frida_script() { if(arguments.length) return new Error().line;
                          
                          
             var Jump = h5frida.StaticInlineHookFunction("Frameworks/UnityFramework.framework/UnityFramework",
-            0x3BB680C,
+            0x2DB10E8,
     "bool",
     ["pointer"],
     function(instance) {
