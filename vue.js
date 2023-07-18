@@ -58,7 +58,7 @@ function frida_script() { if(arguments.length) return new Error().line;
     ["pointer"],
     function(instance) {
         //return 1 for true, 0 for false
-        return false;
+        return 1;
     }
 );
                         
