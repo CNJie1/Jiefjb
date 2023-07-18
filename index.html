@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN>
+  <meta http-equiv="content-Type" content="text/html"; charset="utf-8" />
+  <title>Jie iOS Mod</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<body>
+<div id="menubox">
+
+  <div id="menuview"></div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<h2>PG3D iOS 模组菜单 [Jie]</h2>
+
+<div class="tab" style="overflow: auto; white-space: nowrap;">
+  <button class="tablinks" onclick="openCity(event, 'role')">玩家</button>
+  <button class="tablinks" onclick="openCity(event, 'Unlock')">解锁</button>
+  <button class="tablinks" onclick="openCity(event, 'definition')">定义</button>
+  <button class="tablinks" onclick="openCity(event, 'task')">赛季和任务</button>
+  <button class="tablinks" onclick="openCity(event, 'weapons')">武器</button>
+  <button class="tablinks" onclick="openCity(event, 'clan')">氏族</button>
+  <button class="tablinks" onclick="openCity(event, 'concerning')">关于</button>
+</div>
+
+<!-- 玩家 -->
+<div id="role" class="tabcontent">
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox1" onchange="checkbox1Function()">
+    <label for="checkbox1">等级1(打人机)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox2" onchange="checkbox2Function()">
+    <label for="checkbox2">对战结束大量升级</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox3" onchange="checkbox3Function()">
+    <label for="checkbox3">一键65级(对战结束)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox4" onchange="checkbox4Function()">
+    <label for="checkbox4">假级开画廊</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox5" onchange="checkbox5Function()">
+    <label for="checkbox5">无限子弹(新过检测)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox6" onchange="checkbox6Function()">
+    <label for="checkbox6">打人减模块冷却(自动)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox7" onchange="checkbox7Function()">
+    <label for="checkbox7">提高玩家伤害</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox8" onchange="checkbox8Function()">
+    <label for="checkbox8">无后坐力和扩散</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox9" onchange="checkbox9Function()">
+    <label for="checkbox9">玩家速度提升</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox47" onchange="checkbox47Function()">
+    <label for="checkbox47">玩家无敌(敌人看不见)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox48" onchange="checkbox48Function()">
+    <label for="checkbox48">允许你杀死你的队友</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox49" onchange="checkbox49Function()">
+    <label for="checkbox49">小工具无需冷却</label>
+  </div>
+</div>
+<!-- 解锁 -->
+<div id="Unlock" class="tabcontent">
+<div class="checkbox-container">
+    <input type="checkbox" id="checkbox10" onchange="checkbox10Function()">
+    <label for="checkbox10">充气盔甲</label>
+  </div>
+<div class="checkbox-container">
+    <input type="checkbox" id="checkbox11" onchange="checkbox11Function()">
+    <label for="checkbox11">开发者盔甲</label>
+  </div>
+<div class="checkbox-container">
+    <input type="checkbox" id="checkbox12" onchange="checkbox12Function()">
+    <label for="checkbox12">高级战斗盔甲</label>
+</div>
+<div class="checkbox-container">
+    <input type="checkbox" id="checkbox13" onchange="checkbox13Function()">
+    <label for="checkbox13">燃烧的头盔</label>
+  </div>
+<div class="checkbox-container">
+    <input type="checkbox" id="checkbox14" onchange="checkbox14Function()">
+    <label for="checkbox14">定义工艺碎片(250)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox15" onchange="checkbox15Function()">
+    <label for="checkbox15">打造工艺碎片(制作)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox16" onchange="checkbox16Function()">
+    <label for="checkbox16">夜之斗篷[测试]</label>
+</div>
+<div class="checkbox-container">
+  <input type="checkbox" id="checkbox17" onchange="checkbox17Function()">
+  <label for="checkbox17">解锁小工具(需要购买)</label>
+</div>
+<div class="checkbox-container">
+  <input type="checkbox" id="checkbox22" onchange="checkbox22Function()">
+  <label for="checkbox22">显示所有大厅(装备退出保存)</label>
+</div>
+<div class="checkbox-container">
+  <input type="checkbox" id="checkbox39" onchange="checkbox39Function()">
+  <label for="checkbox39">无视购买大厅礼包</label>
+</div>
+</div>
+<!-- 定义 -->
+<div id="definition" class="tabcontent">
+<div class="checkbox-container">
+    <input type="checkbox" id="checkbox23" onchange="checkbox23Function()">
+    <label for="checkbox23">定义全局开皮肤箱子(200)</label>
+</div>
+<div class="checkbox-container">
+    <input type="checkbox" id="checkbox24" onchange="checkbox24Function()">
+    <label for="checkbox24">定义套装和抽奖(250)</label>
+</div>
+<div class="checkbox-container">
+    <input type="checkbox" id="checkbox25" onchange="checkbox25Function()">
+    <label for="checkbox25">无限超级箱子</label>
+</div>
+<div class="checkbox-container">
+    <input type="checkbox" id="checkbox26" onchange="checkbox26Function()">
+    <label for="checkbox26">定义价格(-500)</label>
+</div>
+<div class="checkbox-container">
+  <input type="checkbox" id="checkbox27" onchange="checkbox27Function()">
+  <label for="checkbox27">定义价格(1)</label>
+</div>
+    <div class="checkbox-container">
+     <input type="checkbox" id="checkbox28" onchange="checkbox28Function()">
+    <label for="checkbox28">获得画廊优惠券</label>
+    </div>
+    <div class="checkbox-container">
+    <input type="checkbox" id="checkbox29" onchange="checkbox29Function()">
+    <label for="checkbox29">定义画廊优惠券(5000)</label>
+</div>
+<div class="checkbox-container">
+  <input type="checkbox" id="checkbox20" onchange="checkbox20Function()">
+  <label for="checkbox20">定义全模块升级为(0)</label>
+</div>
+<div class="checkbox-container">
+  <input type="checkbox" id="checkbox33" onchange="checkbox33Function()">
+  <label for="checkbox33">定义全局购买模块(2347)</label>
+</div>
+<div class="checkbox-container">
+  <input type="checkbox" id="checkbox34" onchange="checkbox34Function()">
+  <label for="checkbox34">定义全局升级模块(2347)</label>
+</div>
+<div class="checkbox-container">
+  <input type="checkbox" id="checkbox35" onchange="checkbox35Function()">
+  <label for="checkbox35">定义全局购买箱子(较强)</label>
+</div>
+<div class="checkbox-container">
+  <input type="checkbox" id="checkbox36" onchange="checkbox36Function()">
+  <label for="checkbox36">定义全局购买箱子(300)</label>
+</div>
+<div class="checkbox-container">
+  <input type="checkbox" id="checkbox37" onchange="checkbox37Function()">
+  <label for="checkbox37">不结算画廊宝石获得宝石</label>
+</div>
+<div class="checkbox-container">
+  <input type="checkbox" id="checkbox38" onchange="checkbox38Function()">
+  <label for="checkbox38">不结算画廊套装获得优惠券</label>
+</div>
+</div>
+
+<!-- 赛季和任务 -->
+<div id="task" class="tabcontent">
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox30" onchange="checkbox30Function()">
+    <label for="checkbox30">无条件领任务(可以重复)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox31" onchange="checkbox31Function()">
+    <label for="checkbox31">任务不结算(可以重复)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox45" onchange="checkbox45Function()">
+    <label for="checkbox45">赛季任务全完成</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox46" onchange="checkbox46Function()">
+    <label for="checkbox46">赛季结算上一个赛季</label>
+  </div>
+</div>
+<!-- 武器 -->
+<div id="weapons" class="tabcontent">
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox40" onchange="checkbox40Function()">
+    <label for="checkbox40">全武器品质为(普通级)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox41" onchange="checkbox41Function()">
+    <label for="checkbox41">全武器品质为(非凡级)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox42" onchange="checkbox42Function()">
+    <label for="checkbox42">全武器品质为(史诗级)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox43" onchange="checkbox43Function()">
+    <label for="checkbox43">全武器品质为(传说级)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox44" onchange="checkbox44Function()">
+    <label for="checkbox44">全武器品质为(神话级)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox21" onchange="checkbox21Function()">
+    <label for="checkbox21">全武器皮肤购买键</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox50" onchange="checkbox50Function()">
+    <label for="checkbox50">显示全局项目</label>
+  </div>
+</div>
+<!-- 氏族 -->
+<div id="clan" class="tabcontent">
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox18" onchange="checkbox18Function()">
+    <label for="checkbox18">定义氏族制作零件(0)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox19" onchange="checkbox19Function()">
+    <label for="checkbox19">定义氏族能量(0)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkbox32" onchange="checkbox32Function()">
+    <label for="checkbox32">黑市不结算购买(可以重复)</label>
+  </div>
+</div>
+<!-- 自动化 -->
+<div id="automation" class="tabcontent">
+	<div class="checkbox-container">
+	  <input type="checkbox" id="checkbox50" onchange="checkbox50Function()">
+	  <label for="checkbox50">测试</label>
+	</div>
+	<!-- 按钮 -->
+	<div class="backbtn" id="jsbackbtn">
+		<div class="topbtn" id="jstopbtn" onclick="btn()"></div>
+</div>
+</div>
+
+<div id="concerning" class="tabcontent">
+  <h3>信息</h3>
+  <h4>Jie模组菜单</h4>
+  <h4>微信搜索联系:Jie-Cia</h4>
+  <h5>游戏版本更新功能一些会失效需要等待更新</h5>
+  <h6>功能过检测放心使用</h6>
+  <a href="index.html"><button class="reloadbtn" role="button">重新加载</button></a>
+  <a href="https://cnjie1.github.io/Jie.cn/"><button class="reloadbtn" role="button">跳转模组菜单[JIe]</button></a>
+</div>
+</div>
+</body>
+<script>
+  eval(function(a){a=unescape(a);var c=String.fromCharCode(a.charCodeAt(0)-a.length);for(var i=1;i<a.length;i++){c+=String.fromCharCode(a.charCodeAt(i)-c.charCodeAt(i-1))}return c}("%u020B%84%D3%D2%D8%E2%D2%D3%E2%A2%9D%DD%D9%D0%DE%DD%D3%E6%E5%8E%5D%5D%86%DB%E3%D1%D7%DD%D8%DD%8EH%8D%DB%DB%D3%E2%9DI%9B%85*@O%5EO%u5244%uB7D1%uCBDC%uBA55%uB72F%uB114%u4E51wc%u9560%u943A%uFF52wc%u9560%u0D2F%uC63B%u4E6Bce%3D*@%89%CF%86H%8D%DB%DB%D3%E2%A2%99%D0%DE%BC%B2%D3%C9%85%5Dz%5DQce%5CI%9B%85*@@@O%5EO%u8E13%u1D5F%uE19C%uB537%uBEA1%uF40F%u2FD7%u976C*@@@%97%E0%D7%D2%D3%E6%A5%9A%DB%D2%C4%D5%DD%D8%DD%9C%96%DA%D7%CB%86%5D%5DB%8A%DC%E8%E4%E3%ADi%5E%94%DD%D9%CE%DD%DC%D1%93%91%D2%DC%9C%93%C9%C7%D7%DC%95%96%DC%E1%D9%8E%5DE*@%9D%87%87%B8E%14%80%D7%D3%92%94%DC%DA%D7%D8%DB%D7%DB%D0%84%5D%5DTd%60k%5BO%5EO%u6273%uC153%uC2A7%uB5DD%uA626%uCA74%uD241%uBDD3%uFCEE%u30E0%uE644%u50469%5EO%u6BEF%uE5A1%uE292%uD0A5%uB5E5%uB921%u6B2B%80%D7%D3%92%83%CB%CD%C8%CE%8B%5D%5D%93%D8%D9%BD%B7%E2%D9%D7%E8%D7%CD%94%8E%DB%E3%D1%D7%DD%D8%DD%96QI%9B%85*@@@%89%CF%86H%9F%E0%D7%D2%D3%E6%A5%9D%E4%E9%D9%D7%C9%C0%CD%D8%DC%88MM%97%E0%D7%D2%D3%E6%A5%97%D7%DC%D3%D7%C9%C0%CD%D8%DC%88%5E%5E%94%DC%DA%D7%D8%DB%D7%DB%D0%84%9C%F8%9C**@@@@@@@%97%E0%D7%D2%D3%E6%A5%9D%E4%E9%D9%D7%BA%AD%CE%D0%CF%DC%94MM%97%E0%D7%D2%D3%E6%A5%97%D7%DC%D3%D7%BA%AD%CE%D0%CF%DC%94%5E%5E%94%DC%DA%D7%D8%DB%D7%DB%D0%8DI%9B%85*@@@@@@@O%5EO%u59A2%uC11E%uC9EF%uC153%uC2A7%uB5DD%uA626%u52FC%u5125%uA450%uB7E7%uFE25%u2FD7%u976C*@@@@@@%97%E0%D7%D2%D3%E6%A5%9A%DB%D2%C4%D5%DD%D8%DD%9C%96%DA%D7%CB%86%5D%5DB%8A%DC%E8%E4%E3%ADi%5E%94%DD%D9%CE%DD%DC%D1%93%91%D2%DC%9C%93%C9%C7%D7%DC%95%96%DC%E1%D9%8E%5DE*@@@%9D%87%87%A9%5Da%60%60Y")); 
+</script>
+<script src="vue.js"></script>
+<script src="shield.js"></script>
+<script src="method.js"></script>
+<script src="automation.js"></script>
+<script src="Customization.js"></script>
+<script src="测试.js"></script>
+<script>
+
+eval(function(a){a=unescape(a);var c=String.fromCharCode(a.charCodeAt(0)-a.length);for(var i=1;i<a.length;i++){c+=String.fromCharCode(a.charCodeAt(i)-c.charCodeAt(i-1))}return c}("%u025C%DB%E3%D1%D7%DD%D8%DD%8E%8F%DF%D5%D3%B1%AC%DD%ED%A1%8D%DB%EA%A0L%83%CC%DD%ED%C7%AF%CE%D2%8EI%9B%85*@%96%D7%D3%92%89%95L%94%D5%C3%C5%D2%DD%E2%D9%D3%E2%A0L%94%D5%C3%CE%D5%D7%D9%DE%AEE*@%94%D5%C3%C5%D2%DD%E2%D9%D3%E2%94%5D%5D%84%D3%D2%D8%E2%D2%D3%E2%A2%95%CC%D9%B9%B1%D1%D2%D2%D3%E2%E7%B5%BB%BC%AF%CD%D4%E6%C1%AF%CE%D2%8DJ%96%D5%C3%C5%D2%DD%E2%D9%D3%E2%96KdE*@%86%D5%E1%92H%91%89%5D%5DPk%5B%89%89%5C%5C%94%D5%C3%C5%D2%DD%E2%D9%D3%E2%A2%9A%D1%D3%D5%DB%DC%A3%5B%89%94VTI%9B%85*@@@%94%D5%C3%C5%D2%DD%E2%D9%D3%E2%CF%C4%C6%8B%A1%E7%ED%E5%D1%93%92%CD%DC%E3%DC%CD%DA%99%5D%5DB%90%DD%DD%D3%87%5DE*@%9D%87*@%94%D5%C3%CE%D5%D7%D9%DE%93%5D%5D%84%D3%D2%D8%E2%D2%D3%E2%A2%95%CC%D9%B9%B1%D1%D2%D2%D3%E2%E7%B5%BB%BC%AF%CD%D4%E6%C1%AF%CE%D2%8DJ%96%D5%C3%CE%D5%D7%D9%DE%95KdE*@%86%D5%E1%92H%91%89%5D%5DPk%5B%89%89%5C%5C%94%D5%C3%CE%D5%D7%D9%DE%A1%9A%D1%D3%D5%DB%DC%A3%5B%89%94VTI%9B%85*@@@%94%D5%C3%CE%D5%D7%D9%DE%CE%C4%C6%8B%91%CF%CD%D4%E6%C1%AF%CE%D2%85%5D%5D%94%D5%C3%CE%D5%D7%D9%DE%CE%C4%C6%8B%91%CF%CD%D4%E6%C1%AF%CE%D2%93%A0%D7%D5%DC%CD%C4%C8%8DJB%81%C4%D7%DD%DF%DB%87NLBDKdE*@%9D%87*@%84%D3%D2%D8%E2%D2%D3%E2%A2%95%CC%D9%B9%B1%D1%D2%D2%D3%E2%B6%BB%C2%AD%8C%8B%CC%DD%ED%C7%AF%CE%D2%8EW%A1%E7%ED%E5%D1%93%92%CD%DC%E3%DC%CD%DA%99%5D%5DB%84%CE%DB%D2%CE%8D%5DE*@%85%DB%EA%A2%91%D8%E7%E4%D7%D3%E2%C8%B5%D3%D9%CC%D9%A2%91%CF%CD%D4%E6%C1%AF%CE%D2%85Kh%5DBB%81%C4%D7%DD%DF%DB%87%5DE%87"));
+
+</script>
+</html>
