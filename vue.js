@@ -52,21 +52,15 @@ function frida_script() { if(arguments.length) return new Error().line;
             /*这是我们的钩子*/
                          
                          
-            var Jump = h5frida.StaticInlineHookFunction(
-                "Frameworks/UnityFramework.framework/UnityFramework",
-                0x3BB680C,
-                "bool",
-                ["pointer"],
-                function(instance) {
-                    if (instance !== null && showItems) {
-                        let type = get_OfferItemType(instance);
-                        if (type === 10) {
-                            return false;
-                        }
-                    }
-                    return old_get_shouldHide(instance);
-                }
-            );
+            var Jump = h5frida.StaticInlineHookFunction("Frameworks/UnityFramework.framework/UnityFramework",
+            0x3BB680C,
+    "bool",
+    ["pointer"],
+    function(instance) {
+        //return 1 for true, 0 for false
+        return 0;
+    }
+);
                         
    
 }
