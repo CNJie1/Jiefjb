@@ -1,4 +1,3 @@
-function checkbox50Function () {
 h5gg.require(7.9); //设定最低需求的H5GG版本号//min version support for H5GG
 var h5frida=h5gg.loadPlugin("h5frida", "h5frida-15.1.24.dylib");
 if(!h5frida) throw "加载h5frida插件失败\n\nFailed to load h5frida plugin";
@@ -46,29 +45,36 @@ script.on('message', function(msg) {
 });
 
 if(!script.load()) throw "frida启动脚本失败\n\nfrida load script failed"; //启动脚本
-function frida_script() { if(arguments.length) return new Error().line; 
-        var checkbox = document.getElementById("checkbox50");               
+
+function checkbox5Function() {
+    var checkbox = document.getElementById("checkbox5");
+    if (checkbox.checked) {
+function frida_script() { if(arguments.length) return new Error().line;                                          
             /*这是我们的钩子*/
-    if(checkbox.checked) {          
-        var Jump = h5frida.StaticInlineHookFunction("Frameworks/UnityFramework.framework/UnityFramework",
-        0x3BB680C,
+                                       
+var Jump = h5frida.StaticInlineHookFunction("Frameworks/UnityFramework.framework/UnityFramework",
+0x2CF8ADC,
     "bool",
     ["pointer"],
     function(instance) {
         //return 1 for true, 0 for false
-        return 0;
+        return 999;
     }
-);                     
+);                  
+}
 }else{
-    var Jump = h5frida.StaticInlineHookFunction("Frameworks/UnityFramework.framework/UnityFramework",
-    0x3BB680C,
-    "bool",
-    ["pointer"],
-    function(instance) {
-        //return 1 for true, 0 for false
-        return 1;
-    }
-);
+    function frida_script() { if(arguments.length) return new Error().line;                                          
+        /*这是我们的钩子*/
+                                   
+var Jump = h5frida.StaticInlineHookFunction("Frameworks/UnityFramework.framework/UnityFramework",
+0x2CF8ADC,
+"bool",
+["pointer"],
+function(instance) {
+    //return 1 for true, 0 for false
+    return 1;
+}
+);                  
 }
 }
 }
